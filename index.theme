@@ -1,0 +1,6 @@
+[theme]
+name=lightdm-simplelight
+description=Simple lightdm theme
+engine=lightdm-webkit-greeter
+url=index.html
+session=bspwm

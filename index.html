@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" />
+    
+</head>
+<body>
+  <section class="home">
+    <div id="login-background"></div>
+	      
+
+
+        <div id="login-box">
+            <img id="login-picture" type="img-button" >
+                    
+            <div id="messages"></div>
+            
+            <form id="login-form" action="">
+
+              
+                  <div id="user"></div>
+                  <div class="login-password">
+                  <label for="input" class="pass"></label><input placeholder="············" type="password" id="pass" name="pass" >
+                  <i class="uil--eye-slash pw_hide"></i>
+   
+                  
+                  
+                  </div>
+                  <button id="login-button" tabindex="3">
+                    Login
+                </button>
+                
+            </form>
+          </div>
+          <div class="select-menu">
+            <div class="select-btn">
+              <span class="sBtn-text">Session</span>
+              <i class="uil--angle-down"></i>
+            </div>
+          
+            <ul class="options" id="list">
+              
+            </ul>
+          </div>
+          <div class="form_container">
+                  <i class="uil--multiply" id="form_close"></i>
+                  <!-- User Form -->
+                  <form id="user_form" action="javascript:list_users()">
+                    <div class="form user_form">
+                      
+                    </form>
+                  </div>
+                </div>
+                <nav class="nav">
+                  <input id="menu" type="checkbox">
+                  <label for="menu">Power</label>
+                  <ul class="menu">
+                    <li>
+                      <a href="#0">
+                        <span>Shutdown</span>
+                        <i class="shutdown" aria-hidden="true" onclick="lightdm.shutdown();"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                        <span>Reboot</span>
+                        <i class="reboot" aria-hidden="true" onclick="lightdm.restart();"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                        <span>Hibernate</span>
+                        <i class="hibernate" aria-hidden="true" onclick="lightdm.hibernate();"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                        <span>Sleep</span>
+                        <i class="sleep" aria-hidden="true" onclick="lightdm.suspend();"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+    
+</section>
+    
+    <script src="js/mock.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
