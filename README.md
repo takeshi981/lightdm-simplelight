@@ -9,7 +9,7 @@
 
 * Font are included with the theme.
 
-* Install lightdm and lightdm-webki2-greeter.
+* Install lightdm and lightdm-webkit2-greeter.
 
 * Go to folder /usr/share/lightdm-webkit/themes/
 
@@ -24,5 +24,5 @@
 * [WebKit2 Greeter](https://www.archlinux.org/packages/community/x86_64/lightdm-webkit2-greeter/)
 
 ## Screenshot
-![Screenshot](https://imgur.com/a/xBEmqPL "Screenshot")
+![Screenshot](https://imgur.com/a/xBEmqPL.png "Screenshot")
 ***
