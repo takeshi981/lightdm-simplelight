@@ -24,5 +24,5 @@
 * [WebKit2 Greeter](https://www.archlinux.org/packages/community/x86_64/lightdm-webkit2-greeter/)
 
 ## Screenshot
-![Screenshot](https://imgur.com/a/xBEmqPL.png "Screenshot")
+![Screenshot](https://i.imgur.com/uLprkGb.png "Screenshot")
 ***
