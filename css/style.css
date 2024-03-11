@@ -13,7 +13,7 @@
   --black: #21232a;
 }
 * {
-  
+ 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,18 +25,24 @@
     user-select: none;
 }
 
+html{
+  width: 100vw;
+  height: 100vh;
+}
 body
 {
   font-family: "Montserrat";
   
-  padding: 0 20px;
+  padding: 0;
   color: var(--white);
   display: flex;
+  overflow: auto;
   margin: 0;
   background: #cee4fc;
 	background-size: auto auto;
-  height: 100%;
-
+  
+  min-height: 100%;
+  min-width: 100%;
 	-webkit-animation: AnimationName 30s ease infinite;
 	-moz-animation: AnimationName 30s ease infinite;
 	animation: AnimationName 30s ease infinite;
@@ -361,7 +367,7 @@ input{
   cursor: pointer;
 }
 .home {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   background-image: url("../bg.jpg");
@@ -370,9 +376,9 @@ input{
 }
 .home::before {
   content: "";
-  position: absolute;
-  height: auto;
-  width: auto;
+  position: fixed;
+  height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
   opacity: 0;
@@ -383,7 +389,7 @@ input{
 .home.show::before {
   opacity: 1;
   pointer-events: auto;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
 
@@ -521,16 +527,21 @@ a {
 
 
 .nav {
-  position: relative;
+  position: fixed;
   display: flex;
+  bottom: 0;
+  left: 50%;
+  width: 400px;
+  z-index: 99;
+  align-items: center;
   justify-content: center;
-  max-width: 400px;
   padding-bottom: 20px;
   border-radius: 5px 5px 25px 25px;
-  margin: 300px auto 0;
+  margin: 0;
   background: var(--white);
   box-shadow: rgb(50 50 93 / 10%) 0 30px 60px -12px,
     rgb(0 0 0 / 15%) 0 18px 36px -18px;
+  transform: translateX(-50%);
 }
 
 .nav [type="checkbox"] {
@@ -548,6 +559,7 @@ a {
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
+  
   background: var(--violet);
   border-radius: 50%;
   transform: translateY(-50%);
@@ -557,6 +569,7 @@ a {
 .nav [type="checkbox"] + label:hover {
   background: var(--dark-violet);
 }
+
 
 .menu li {
   position: absolute;
